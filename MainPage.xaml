@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<ContentPage
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="MinhaBiblioteca.MainPage"
+    Title="Minha Biblioteca">
+
+    <Grid
+        Padding="20"
+        RowDefinitions="Auto,Auto,Auto,*"
+        RowSpacing="15">
+
+        <!-- Título -->
+        <Label
+            Grid.Row="0"
+            Text="Minha Biblioteca"
+            FontSize="30"
+            FontAttributes="Bold"
+            HorizontalOptions="Center"/>
+
+        <!-- Botão adicionar -->
+        <Button
+            Grid.Row="1"
+            x:Name="btnAdicionarLivro"
+            Text="+ Adicionar livro"
+            Clicked="btnAdicionarLivro_Clicked"
+            HeightRequest="50"/>
+
+        <!-- Mensagem -->
+        <Label
+            Grid.Row="2"
+            x:Name="lblStatus"
+            Text="Seus livros aparecerão abaixo."
+            HorizontalOptions="Center"/>
+
+        <!-- Lista de livros -->
+        <CollectionView
+            Grid.Row="3"
+            x:Name="listaLivros"
+            SelectionMode="Single"
+            SelectionChanged="listaLivros_SelectionChanged">
+
+            <CollectionView.EmptyView>
+
+                <VerticalStackLayout
+                    Padding="20">
+
+                    <Label
+                        Text="Nenhum livro adicionado ainda."
+                        HorizontalOptions="Center"
+                        FontSize="16"/>
+
+                </VerticalStackLayout>
+
+            </CollectionView.EmptyView>
+
+            <CollectionView.ItemTemplate>
+
+                <DataTemplate>
+
+                    <Border
+                        StrokeThickness="1"
+                        Padding="15"
+                        Margin="0,5"
+                        StrokeShape="RoundRectangle 12">
+
+                        <VerticalStackLayout
+                            Spacing="5">
+
+                            <Label
+                                Text="{Binding Titulo}"
+                                FontSize="20"
+                                FontAttributes="Bold"/>
+
+                            <Label
+                                Text="{Binding Autor}"
+                                FontSize="14"/>
+
+                            <Label
+                                Text="{Binding PaginaAtual, StringFormat='Página atual: {0}'}"
+                                FontSize="13"/>
+
+                            <Label
+                                Text="{Binding DataAdicionado, StringFormat='Adicionado em: {0:dd/MM/yyyy}'}"
+                                FontSize="12"/>
+
+                        </VerticalStackLayout>
+
+                    </Border>
+
+                </DataTemplate>
+
+            </CollectionView.ItemTemplate>
+
+        </CollectionView>
+
+    </Grid>
+
+</ContentPage>

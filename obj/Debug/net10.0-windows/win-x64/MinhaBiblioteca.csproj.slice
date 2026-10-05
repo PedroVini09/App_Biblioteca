@@ -1,0 +1,128 @@
+[project]
+project=MinhaBiblioteca.csproj
+language=C#
+lastDtbSucceeded
+
+[sliceDimensions]
+TargetFramework=net10.0-windows
+
+[properties]
+AssemblyName=MinhaBiblioteca
+BaseIntermediateOutputPath=obj/
+BaseOutputPath=bin/
+MaxSupportedLangVersion=14.0
+OutputType=WinExe
+ProjectAssetsFile=<PATH>obj/project.assets.json
+RootNamespace=MinhaBiblioteca
+TargetFramework=net10.0-windows
+TargetFrameworkIdentifier=.NETCoreApp
+TargetFrameworkVersion=v10.0
+TargetPath=<PATH>bin/Debug/net10.0-windows/win-x64/MinhaBiblioteca.dll
+TargetRefPath=<PATH>obj/Debug/net10.0-windows/win-x64/ref/MinhaBiblioteca.dll
+TemporaryDependencyNodeTargetIdentifier=net10.0-windows
+
+[commandLineArguments]
+/noconfig
+/unsafe-
+/checked-
+/nowarn:1701,1702,1701,1702,8002
+/fullpaths
+/nostdlib+
+/errorreport:prompt
+/warn:10
+/define:TRACE;DEBUG;NET;NET10_0;NETCOREAPP;WINDOWS;WINDOWS7_0;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NET7_0_OR_GREATER;NET8_0_OR_GREATER;NET9_0_OR_GREATER;NET10_0_OR_GREATER;NETCOREAPP1_0_OR_GREATER;NETCOREAPP1_1_OR_GREATER;NETCOREAPP2_0_OR_GREATER;NETCOREAPP2_1_OR_GREATER;NETCOREAPP2_2_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER;WINDOWS7_0_OR_GREATER
+/highentropyva+
+/nullable:enable
+/features:"InterceptorsNamespaces=;Microsoft.Extensions.Validation.Generated;Microsoft.Maui.Controls.Generated"
+/debug+
+/debug:portable
+/filealign:512
+/optimize-
+/out:obj/Debug/net10.0-windows/win-x64/MinhaBiblioteca.dll
+/refout:obj/Debug/net10.0-windows/win-x64/refint/MinhaBiblioteca.dll
+/target:winexe
+/warnaserror-
+/utf8output
+/win32manifest:Platforms/Windows/app.manifest
+/deterministic+
+/langversion:14.0
+/warnaserror+:NU1605,SYSLIB0011
+
+[sourceFiles]
+obj/Debug/net10.0-windows/win-x64/
+ .NETCoreApp,Version=v10.0.AssemblyAttributes.cs
+ MinhaBiblioteca.AssemblyInfo.cs
+ MinhaBiblioteca.GlobalUsings.g.cs
+Platforms/Windows/App.xaml.cs
+App.xaml.cs
+AppShell.xaml.cs
+MainPage.xaml.cs
+MauiProgram.cs
+
+[frameworkPacks]
+Microsoft.NETCore.App.Ref
+
+[metadataReferences]
+<NUGET>/
+ microsoft.extensions.configuration.abstractions/10.0.0/lib/net10.0/Microsoft.Extensions.Configuration.Abstractions.dll
+ microsoft.extensions.configuration/10.0.0/lib/net10.0/Microsoft.Extensions.Configuration.dll
+ microsoft.extensions.dependencyinjection.abstractions/10.0.0/lib/net10.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll
+ microsoft.extensions.dependencyinjection/10.0.0/lib/net10.0/Microsoft.Extensions.DependencyInjection.dll
+ microsoft.extensions.diagnostics.abstractions/10.0.0/lib/net10.0/Microsoft.Extensions.Diagnostics.Abstractions.dll
+ microsoft.extensions.fileproviders.abstractions/10.0.0/lib/net10.0/Microsoft.Extensions.FileProviders.Abstractions.dll
+ microsoft.extensions.hosting.abstractions/10.0.0/lib/net10.0/Microsoft.Extensions.Hosting.Abstractions.dll
+ microsoft.extensions.logging.abstractions/10.0.0/lib/net10.0/Microsoft.Extensions.Logging.Abstractions.dll
+ microsoft.extensions.logging.debug/10.0.0/lib/net10.0/Microsoft.Extensions.Logging.Debug.dll
+ microsoft.extensions.logging/10.0.0/lib/net10.0/Microsoft.Extensions.Logging.dll
+ microsoft.extensions.options/10.0.0/lib/net10.0/Microsoft.Extensions.Options.dll
+ microsoft.extensions.primitives/10.0.0/lib/net10.0/Microsoft.Extensions.Primitives.dll
+ microsoft.maui.controls.core/10.0.110/lib/net10.0/Microsoft.Maui.Controls.dll
+ microsoft.maui.controls.xaml/10.0.110/lib/net10.0/Microsoft.Maui.Controls.Xaml.dll
+ microsoft.maui.core/10.0.110/lib/net10.0/Microsoft.Maui.dll
+ microsoft.maui.essentials/10.0.110/lib/net10.0/Microsoft.Maui.Essentials.dll
+ microsoft.maui.graphics/10.0.110/lib/net10.0/Microsoft.Maui.Graphics.dll
+
+[analyzerReferences]
+<NETSDK>/Sdks/Microsoft.NET.Sdk/analyzers/
+ Microsoft.CodeAnalysis.CSharp.NetAnalyzers.dll
+ Microsoft.CodeAnalysis.NetAnalyzers.dll
+<NUGET>/
+ microsoft.extensions.logging.abstractions/10.0.0/analyzers/dotnet/roslyn4.4/cs/Microsoft.Extensions.Logging.Generators.dll
+ microsoft.extensions.options/10.0.0/analyzers/dotnet/roslyn4.4/cs/Microsoft.Extensions.Options.SourceGeneration.dll
+ microsoft.maui.controls.build.tasks/10.0.110/buildTransitive/netstandard2.0/
+  Microsoft.Maui.Controls.BindingSourceGen.dll
+  Microsoft.Maui.Controls.SourceGen.dll
+
+[sdkAnalyzerConfigPolicy]
+Microsoft.NET.Sdk/analyzers
+
+[analyzerConfigFiles]
+obj/Debug/net10.0-windows/win-x64/MinhaBiblioteca.GeneratedMSBuildEditorConfig.editorconfig
+
+[additionalFiles]
+Resources/Styles/
+ Colors.xaml
+ Styles.xaml
+App.xaml
+AppShell.xaml
+MainPage.xaml
+
+[projectReferences]
+
+[capabilities]
+CrossPlatformExecutable
+LaunchProfiles
+LaunchProfilesGroupByPlatformFilters
+Maui
+MauiAssets
+MauiCore
+MauiEssentials
+MauiSingleProject
+Microsoft.Maui.Core.Version.10.0.110
+Microsoft.Maui.Workload.Version.10.0.110
+Msix
+NativeAOT
+Pack
+SingleTargetBuildForStartupProjects
+SupportsHotReload
+UseMaui
